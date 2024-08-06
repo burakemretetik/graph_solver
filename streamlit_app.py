@@ -2,15 +2,15 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("Graph Solver")
+st.title("Sohbet Bot")
 st.write(
-    "This is Graph Solver. Ask a graph problem and it will solve and explain it."
+    "This is a chatbot for having conversations."
     "You can also ask questions about the topic to learn more."
 )
 
 openai_api_key = st.secrets["openai_api_key"]
 if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+    st.info("Can't find the API key.")
 else:
 
     # Create an OpenAI client.
