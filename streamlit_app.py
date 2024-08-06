@@ -4,7 +4,7 @@ from openai import OpenAI
 # Show title and description.
 st.title("Sohbet Bot")
 st.write(
-    "This is a chatbot for having conversations."
+    "This is a chatbot for having conversations. "
     "You can also ask questions about the topic to learn more."
 )
 
